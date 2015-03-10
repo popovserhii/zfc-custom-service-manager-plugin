@@ -18,7 +18,7 @@ If you want use powerful functionality of ServiceManager Plugin
 then you need create custom module in `./vendor` 
 with composer installation and add config to `./config/application.config.php`
 
-	```php
+
 	'service_listener_options' => [
 		[
 			'service_manager' => 'YourLib\Project\PluginManager',
@@ -27,4 +27,4 @@ with composer installation and add config to `./config/application.config.php`
 			'method'          => 'getProjectPluginConfig',
 		],
 	],
-	```
+
