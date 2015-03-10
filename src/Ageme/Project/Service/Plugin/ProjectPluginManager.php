@@ -27,11 +27,14 @@ class ProjectPluginManager extends AbstractPluginManager {
 
 	public function validatePlugin($plugin) {
 		if ($plugin instanceof ProjectPluginInterface) {
-			throw new Exception\RuntimeException(sprintf(
-				'Plugin of type %s is invalid; must implement %s\ProjectPluginInterface',
-				(is_object($plugin) ? get_class($plugin) : gettype($plugin)),
-				__NAMESPACE__
-			));
+			// we're okay
+			return;
 		}
+		
+		throw new Exception\RuntimeException(sprintf(
+			'Plugin of type %s is invalid; must implement %s\ProjectPluginInterface',
+			(is_object($plugin) ? get_class($plugin) : gettype($plugin)),
+			__NAMESPACE__
+		));
 	}
 }
