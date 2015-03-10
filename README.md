@@ -5,7 +5,7 @@ Example creation new ServiceManager Plugin
 
 ## Usage
 
-### This example is correct only for array config notation
+#### This example is correct only for array config notation
 
 	public function indexAction() {
 		$locator = $this->getServiceLocator();
