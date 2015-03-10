@@ -14,15 +14,16 @@ Example creation new ServiceManager Plugin
 		echo $webApp->getName();
 	}
 	
-If you want use powerfull functionality of ServiceManager Plugin 
+If you want use powerful functionality of ServiceManager Plugin 
 then you need create custom module in `./vendor` 
 with composer installation and add config to `./config/application.config.php`
-
-'service_listener_options' => [
-	[
-		'service_manager' => 'YourLib\Project\PluginManager',
-		'config_key'      => 'project_plugins',
-		'interface'       => 'YourLib\Project\Service\Plugin\ProjectPluginProviderInterface',
-		'method'          => 'getProjectPluginConfig',
+	```php
+	'service_listener_options' => [
+		[
+			'service_manager' => 'YourLib\Project\PluginManager',
+			'config_key'      => 'project_plugins',
+			'interface'       => 'YourLib\Project\Service\Plugin\ProjectPluginProviderInterface',
+			'method'          => 'getProjectPluginConfig',
+		],
 	],
-],
+	```
