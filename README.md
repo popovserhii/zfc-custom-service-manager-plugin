@@ -21,10 +21,16 @@ with composer installation and add config to `./config/application.config.php`
 
 	'service_listener_options' => [
 		[
-			'service_manager' => 'YourLib\Project\PluginManager',
+			'service_manager' => 'YourLibPluginManager',
 			'config_key'      => 'project_plugins',
 			'interface'       => 'YourLib\Project\Service\Plugin\ProjectPluginProviderInterface',
 			'method'          => 'getProjectPluginConfig',
 		],
 	],
+	
+    	'service_manager' => [
+        	'invokables' => [
+            		'YourLibPluginManager' => 'YourLib\Project\PluginManager',
+        	],
+    	],
 
