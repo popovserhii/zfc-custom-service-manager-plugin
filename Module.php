@@ -16,7 +16,7 @@ use Zend\ModuleManager\Feature\ConfigProviderInterface;
 
 class Module implements AutoloaderProviderInterface, ConfigProviderInterface {
 
-	public function init(ModuleManager $moduleManager) {
+	/*public function init(ModuleManager $moduleManager) {
 		$sm = $moduleManager->getEvent()->getParam('ServiceManager');
 		$serviceListener = $sm->get('ServiceListener');
 
@@ -39,7 +39,7 @@ class Module implements AutoloaderProviderInterface, ConfigProviderInterface {
 			// function is merged with the config from 'sample_plugins_config_key'.
 			'getProjectPluginConfig'
 		);
-	}
+	}*/
 
 	public function getConfig() {
 		return include __DIR__ . '/config/module.config.php';
