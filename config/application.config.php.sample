@@ -1,0 +1,17 @@
+<?php
+// add this to your main application.config.php
+// @link http://zf2.pp.ua/docs/ru/tutorials/config.advanced.html
+'service_listener_options' => [
+	[
+		'service_manager' => 'AccessPluginManager',
+		'config_key'      => 'access_plugins',
+		'interface'       => 'Agere\Access\Service\Plugin\AccessPluginProviderInterface',
+		'method'          => 'getAccessPluginConfig',
+	],
+],
+
+'service_manager' => [
+	'factories' => [ // Important! You must use factory for compatibility with ZF3
+		'AccessPluginManager' => 'Agere\Access\Service\Plugin\AccessPluginFactory',
+	],
+],
