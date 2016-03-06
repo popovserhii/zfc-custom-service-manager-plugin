@@ -3,15 +3,15 @@
 // @link http://zf2.pp.ua/docs/ru/tutorials/config.advanced.html
 'service_listener_options' => [
 	[
-		'service_manager' => 'AccessPluginManager',
-		'config_key'      => 'access_plugins',
-		'interface'       => 'Agere\Access\Service\Plugin\AccessPluginProviderInterface',
-		'method'          => 'getAccessPluginConfig',
+		'service_manager' => 'ProjectPluginManager',
+		'config_key'      => 'project_plugins',
+		'interface'       => 'Ageme\Project\Service\Plugin\ProjectPluginProviderInterface',
+		'method'          => 'getProjectPluginConfig',
 	],
 ],
 
 'service_manager' => [
 	'factories' => [ // Important! You must use factory for compatibility with ZF3
-		'AccessPluginManager' => 'Agere\Access\Service\Plugin\AccessPluginFactory',
+		'AccessPluginManager' => 'Ageme\Project\Service\Plugin\ProjectPluginFactory',
 	],
 ],
