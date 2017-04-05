@@ -1,0 +1,27 @@
+{
+  "name": "popov/zfc-custom-service-manager-plugin",
+  "description": "ZF2 bare module for create custom service manager",
+  "type": "library",
+  "license": "MIT",
+  "keywords": [
+    "zf2",
+    "agere"
+  ],
+  "authors": [
+    {
+      "name": "Sergiy Popov",
+      "email": "popow.sergiy@gmail.com",
+      "homepage": "http://agere.com.ua/",
+      "role": "Developer"
+    }
+  ],
+  "minimum-stability": "stable",
+  "require": {
+    "php": ">=5.6"
+  },
+  "autoload": {
+    "psr-4": {
+      "Agere\\CustomManager\\": "src/"
+    }
+  }
+}
