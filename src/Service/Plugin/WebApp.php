@@ -2,13 +2,13 @@
 /**
  * WebApp project
  *
- * @category Ageme
- * @package Ageme_Project
- * @author Popov Sergiy <popov@agere.com.ua>
+ * @category Popov
+ * @package Popov_Project
+ * @author Serhii Popov <popow.sergiy@gmail.com>
  * @datetime: 09.03.15 23:57
  */
 
-namespace Ageme\Project\Service\Plugin;
+namespace Popov\Project\Service\Plugin;
 
 
 class WebApp {

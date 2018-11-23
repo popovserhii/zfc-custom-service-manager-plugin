@@ -5,13 +5,13 @@
 	[
 		'service_manager' => 'ProjectPluginManager',
 		'config_key'      => 'project_plugins',
-		'interface'       => 'Ageme\Project\Service\Plugin\ProjectPluginProviderInterface',
+		'interface'       => 'Popov\Project\Service\Plugin\ProjectPluginProviderInterface',
 		'method'          => 'getProjectPluginConfig',
 	],
 ],
 
 'service_manager' => [
 	'factories' => [ // Important! You must use factory for compatibility with ZF3
-		'AccessPluginManager' => 'Ageme\Project\Service\Plugin\ProjectPluginFactory',
+		'AccessPluginManager' => 'Popov\Project\Service\Plugin\GraphQlPluginFactory',
 	],
 ],

@@ -1,12 +1,12 @@
 <?php
-namespace Ageme\Project;
+
+namespace Popov\Project;
 
 return [
-
-	'project_plugins' => [
-		'invokables' => [
-			'web-app' => 'Ageme\Project\Service\Plugin\WebApp',
-		],
-	],
-
+    'project_plugins' => [
+        'invokables' => [
+            'web-app' => 'Popov\Project\Service\Plugin\WebApp',
+        ],
+    ],
 ];
+
