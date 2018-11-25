@@ -24,7 +24,7 @@ class ProjectPluginManager extends AbstractPluginManager
         //'web-app' => 'Popov\Project\Service\Plugin\WebApp',
     ];
 
-    public function validatePlugin($plugin)
+    public function validate($plugin)
     {
         if ($plugin instanceof ProjectPluginInterface) {
             // we're okay
